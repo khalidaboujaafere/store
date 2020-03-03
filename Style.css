@@ -1,0 +1,264 @@
+body {
+	margin:0 ;
+	font-family:Montserrat, sans-serif;
+}
+.page {
+	width:100% ;
+	text-align:left ;
+	position:relative ;
+	cursor:default;
+}
+.image {
+	background-size:cover ;
+	background-position:center;
+	background-color:#009788 ;
+	height:30vh ;
+	width:100% ;
+	position:relative ;
+	margin-top:50px;
+	text-align:center;
+	cursor:default;
+	
+}
+.image:before  {
+	height:0px ;
+	width:0px ;
+	content:' ' ;
+	border-bottom:10vh solid white ;
+	border-right:100vw solid transparent ;
+	position:absolute ;
+	bottom:0px ;
+	left:0px ;
+	text-align:center;
+	cursor:default;
+}
+.content {
+	height:70px;
+	width:86vw ;
+	background:orange;
+	display:inline-block ;
+	z-index:3 ;
+	border-radius:5px ;
+	box-shadow:1px 1px 18px rgba(0,0,0,0.08) , 0px 0px 2px rgba(0,0,0,0.1) ;
+	font-weight:bolder ;
+	margin-left:7vw ;
+	overflow:hidden ;
+	color:#1276af;
+	font-family:monospace;
+}
+.un {
+	position:absolute ;
+	margin-top:-160px;
+	left:0px ;
+	font-size: 20px;
+	line-height:68px ;
+}
+.card-holder {
+margin-bottom: 2em;
+  text-align:right
+}
+
+.card {
+font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  height: 6em;
+  width: 64em;
+  padding: 0.5em 0.5em;
+  border-radius: 0.25em;
+  display: table-cell;
+  vertical-align: middle;
+  letter-spacing: -2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card .subtle {
+  color: #000;
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.card i {
+  font-size: 3em;
+ }
+
+.bg-green {
+  color: #ffffff;
+  background-position: 100% 50%;
+  text-align: right;
+  cursor: pointer;
+}
+.bg-yellow {
+	color: #FFFFFF;
+	text-align: center;
+	}
+.def {
+	font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+#hd {
+font-family: 'Open Sans', sans-serif;
+	height:50vh ;
+	width:100% ;
+	background:transparent ;
+	cursor:pointer ;
+	text-align:center;
+	font-weight:bolder;
+	color:white;
+}
+.header {
+	vertical-align: bottom ;
+	font-size:30px;
+}
+.hed {
+	vertical-align:top;
+	font-size: 15px;
+}
+.josefin {
+	font-family: 'Josefin Sans', serif;
+	font-size: 20px;
+	margin:2px;
+	
+}
+
+.footer {
+	background-color:black;
+	height:auto;
+	color:white;
+	padding: 30px 20px;
+   font-weight: bold; 
+   bottom:0;
+}
+.submit {
+	background-color: green;
+	padding: 12px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
+	align: center;
+	text-align:center;
+} 
+.submit#cele {
+	background-color: green;
+	padding: 20px 25px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin: 0;
+	font-weight: bold;
+	align: center;
+	text-align:center;
+	width:100%;
+} 
+a:link,a:visited,a:active,a:hover {
+	text-decoration: none;
+}
+.space:link,.space:visited,.space:active,.space:hover {
+	margin: 10px;
+	text-decoration: none;
+	color:white;
+}
+.code:link,.code:visited,.code:active,.code:hover {
+	text-decoration: none;
+	color:white;
+}
+.site:link,.site:visited,.site:active,.site:hover {
+	text-decoration: none;
+	color:rgb(0,122,252);
+}
+.footbig {
+font-family:
+	color:#FBFBFB;
+	font-size: 2em;
+}
+.thumbnail {
+border:0;
+cursor:pointer;
+}
+.modal {
+	font-family: 'Montserrat', sans-serif;
+}
+.close {
+	position:absolute;
+	top:5px;
+	right:5px;
+	font-size: 20px;
+	width: 25px;
+	height: 25px;
+	text-align:center;
+	border-radius: 12.5px;
+}
+.modal-header {
+	padding:0px;
+}
+.mod-header {
+	font-size: 25px;
+	color: #000000;
+}
+.mod-header-white {
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.modal-body {
+	color:828187;
+}
+.mod-first-letter {
+	color:green;
+}
+.map {
+	height: 200px;
+	width: 100%;
+	margin-bottom:5px;
+}
+img {
+	display:inline;
+	margin:0;
+	height:70px;
+}
+.install {
+	background-color:green;
+	color:#ffffff;
+	padding:5px 20px;
+	float:right;
+	border-radius:15px;
+}
+.app {
+	width:90%;
+}
+.inner {
+	width:85%;
+	height:auto;
+	display:block;
+	margin:0 auto;
+}
+#hr {
+	width:980%;
+}
+.footer{
+	width:100%;
+	height:200px;
+	background:black;
+}
+
+#main-wrapper{
+	
+	padding: 50px 0;
+	margin-top:100px;
+}
+#main-wrapper h4{
+	color: green;
+	margin-left: 40%;
+	
+}
+
+
+
+
