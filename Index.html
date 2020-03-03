@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>App Store</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="photosgridstyle.css">
+		 <!--Plug In For Using jQuery-->
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<!--Additional Plug In For Using jQuery Transform Transition-->
+		<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+<script type="text/javascript" src="js/jquery.svg.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Open+Sans|Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body>
+	<!---------------هذا nav bar----------->
+	   <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		 <div class="navbar-header">
+			 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>	
+			  </button>
+					   <a href="#" class="navbar-brand" style="color:orange;font-size:30px;font-family:monospace"><span aria-hidden="true"></span>Extra Store</a>
+<!--احذف 👆Extra Store وضع اسم للمتجرك-->
+		 </div>
+		 
+		 <!---------هذا navbar👇----------->
+		 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			 <ul class="nav navbar-nav navbar-right">
+			 <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-book"></span> About</a></li>
+				<li><a href="#footer"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
+
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+				<li><a href="#main-wrapper"><span class="glyphicon glyphicon-envelope"></span> Email Us</a></li>
+			 </ul>
+			</div>
+		</div>
+	</nav>
+	<!---------------نهايةnavbar------------>
+
+<div class="page">
+			<div class="image">
+			<div class="bars" align="center"><table id="hd">
+				<tr>
+					<td class="header">متجرنا</td>
+				</tr>
+				<tr>
+					<td class="hed"><hr width="50">prodect</td>
+				</tr>
+			</table></div>
+			</div>
+			 <div align="center" class="content un">
+				 <span class="josefin" style="color:teal">Wolcome</span> To Our Store
+<i class="fa fa-bag-shopping"></i>
+			</div>
+		</div>
+		<div class="store">
+					   
+			</div>
+			
+			
+</div>
+	
+<script type="text/javascript">
+/////////هذه الجافاسكريب  يمكنك التعديل عليها لجعل هذا المتجر اكثر روعة
+
+$(function(){
+	var app = {
+		1 : {
+		///////متجر موسيقى
+			name : "music mp3",
+			type : "Music & Audio",
+			art : "http://icons.iconarchive.com/icons/bokehlicia/captiva/256/music-icon.png",
+			url : "https://m.soundcloud.com/",
+ 
+			update : {
+				version : "3.2",
+				date : "20 march, 2020",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد.",
+				img : "http://icons.iconarchive.com/icons/treetog/junior/256/folder-blue-music-icon.png"
+},
+			details : {
+				seller : "music album",
+			size : "0 KB",
+				language : "English",
+				sort : "12+",
+				inapp : "No",
+				copy : "khalid abou jaafer &copy; 2020",
+				site : "https://m.soundcloud.com/"
+			}
+		},
+		
+		
+		
+	//////سوق الالعاب/////////	
+		2 : {
+			name : "الالعاب (2020)",
+			type : "Games",
+			art : "http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/Play-Games-icon.png",
+///هذا رابط  صورة لايقونة الالعاب 
+			url : "https://m.kongregate.com/",
+			update : {
+				version : "2.1",
+				date : "25 jan, 2020",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد",
+				img : "https://lh3.googleusercontent.com/VV2Fd_1YXIGuVff92MqGMwJqww4LXW8cFN34q8EVkPFdYVZeYgVTa-Lkqf-cg9u30A"
+},
+			details : {
+				seller : "game online",
+				size : "213 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				copy : "khalid abou jaafer",
+				site : "https://m.kongregate.com/"
+			}
+		},
+		
+////////////سوق تطبيقات///////////		
+		
+		3 : {
+			name : "Application (phone)",
+			type : "تطبيقات",
+			art : "http://icons.iconarchive.com/icons/poundffffff/blox-folder/256/Game-Folder-icon.png",
+			url : "https://www.frandroid.com/telecharger/apps",
+			///////هدا رابط موقع التطبيقات ////////////////
+			update : {
+				version : "2.0",
+				date : "3 May, 2020",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد",
+				img : "https://iconion.com/posts/images/application-icons.jpg"
+},
+			details : {
+				seller : "app",
+				size : "0 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				copy : "undefined",
+				site : "https://www.frandroid.com/telecharger/apps"
+				///////هدا رابط موقع التطبيقات ////////////////
+			}
+		},
+		
+	////////////سوق الكتب///////	
+		4 : {
+			name : "books",
+			type : "كتب",
+			art : "http://icons.iconarchive.com/icons/paomedia/small-n-flat/256/book-icon.png",
+			url : "https://jamalon.com/ar/",
+			///////هدا رابط موقع لبيع الكتب ////////////////
+			update : {
+				version : "1.0",
+				date : "12 Jul, 2018",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد",
+				img : "https://img.freepik.com/free-vector/round-book-labels_23-2147523743.jpg?size=338&ext=jpg"
+				///////هدا رابط صورة الكتاب ////////////////
+},
+			details : {
+				seller : "books",
+				size : "0 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				copy : "undefined",
+				site : "https://jamalon.com/ar/"
+				///////هدا رابط موقع لبيع الكتب ////////////////
+			}
+		},
+		//////////سوق الافلام/////////
+		5 : {
+			name : "Movies",
+			type : "افلام",
+			art : "http://icons.iconarchive.com/icons/sirubico/movie-genre/256/Action-2-icon.png",
+			url : "https://eg.movizland.online/", ////////هدا رابط موقع افلام يمكنك تغيره وتحط رابط قناتك اليوتيوب////
+			update : {
+				version : "1.2",
+				date : "12 May, 2018",
+				versionTxt : "افلام في قم الرواعة اكشن",
+				img : "https://static.fnac-static.com/multimedia/FR/Images_Produits/FR/fnac.com/Visual_Principal_340/3/2/9/0886971445923/tsp20120921184014/Once.jpg"
+},					 ////////هدا مجرد رابط لصورة فيلم
+			details : {
+				seller : "movies",
+				size : "0 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				site : "https://eg.movizland.online/" ////////هدا رابط موقع افلام يمكنك تغيره وتحط رابط قناتك اليوتيوب////
+			
+			}
+			
+		},
+		
+		////////////////////////////////////////////////متجر الهواتف
+		6 : {
+			name : "Phone",
+			type : "هواتف",
+			art : "http://icons.iconarchive.com/icons/designcontest/ecommerce-business/256/mobile-icon.png",
+			url : "https://www.verizonwireless.com/featured/shop-phones-devices/",
+			update : {
+				version : "1.0",
+				date : "27 Feb, 2018",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد.",
+				img : "http://icons.iconarchive.com/icons/musett/iphone-4/256/iPhone-White-W2-icon.png"
+				///////////////////////////هدها رابط صورة ايقونة هاتف
+},
+			details : {
+				seller : "phone",
+				size : "0 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				copy : "undefined",
+				site : "https://www.verizonwireless.com/featured/shop-phones-devices/"
+////هذا رابط موقع بيع الهواتف يمكنك تغيره بموقع اخر او  بلوغ خاص بك
+				
+			}
+		},
+		
+		///////////////////////////////////////متجر الساعات
+		7 : {
+			name : "watch",
+			type : "Hand watches",
+			art : "http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/256/apple-watch-blue-icon.png",
+			url : "https://www.watchshop.com/",
+			update : {
+				version : "1.2",
+				date : "7 Oct, 2018",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد.",
+				img : "https://st1.bgr.in/wp-content/uploads/2017/09/apple-watch-series-3-launched1.jpg"
+},
+			details : {
+				seller : "watch",
+				size : "0 KB",
+				language : "English",
+				sort : "12+",
+				inapp : "No",
+				copy : "undefined",
+				site : "https://www.watchshop.com/"
+					}
+		},
+				////////////متجر حواسب
+				8 : {
+			name : "laptop",
+			type : "حواسب",
+			art : "http://icons.iconarchive.com/icons/sirubico/black-metal/256/PC-a-icon.png",
+			url : "https://www.target.com/p/hp-14-34-stream-laptop-with-windows-10s-8-hour-battery-2-88lbs-office-365-personal-1-year-14-ds0035nr-black/-/A-76374193",
+			///////هدا رابط متجر للحواسب 
+			update : {
+				version : "2.0",
+				date : "3 May, 2020",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد",
+				img : "https://target.scene7.com/is/image/Target/GUEST_2cb81429-497b-4a1f-a637-9dfcbebe38c2?wid=325&hei=325&qlt=80&fmt=webp"
+},
+			details : {
+				seller : "laptop",
+				size : "0 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				copy : "undefined",
+				site : "https://www.target.com/p/hp-14-34-stream-laptop-with-windows-10s-8-hour-battery-2-88lbs-office-365-personal-1-year-14-ds0035nr-black/-/A-76374193"
+				///////هدا متجر للحواسب 
+			}
+		},
+		
+	////////////متجر الملابس	
+		9 : {
+			name : "Clothes",
+			type : "ملابس",
+			art : "http://icons.iconarchive.com/icons/google/noto-emoji-people-clothing-objects/256/12186-womans-clothes-icon.png",
+			url : "https://www.asos.com/",
+			///////هدا رابط موقع لبيع  الملابس
+			update : {
+				version : "1.0",
+				date : "12 Jan, 2020",
+				versionTxt : "هنا احدف هدا النص وضع مكانه النص الدي تريد",
+				img : "http://icons.iconarchive.com/icons/google/noto-emoji-people-clothing-objects/256/12186-womans-clothes-icon.png"
+				///////هدا رابط صورة الملابس
+},
+			details : {
+				seller : "books",
+				size : "0 KB",
+				language : "English",
+				sort : "4+",
+				inapp : "No",
+				copy : "undefined",
+				site : "https://www.asos.com/"
+				///////هدا رابط موقع لبيع الملابس
+		
+				
+			}
+		}
+	}
+	var cout = '';
+	for (i in app) {
+	cout='<div id="'+app[i].name.toLowerCase().split(" ").join("").replace(/[^A-Za-z0-9 ]/g,"")+'" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><div class="modal-title"><div style="padding:15px;" align="left"><table class="app"><tr><td style="width:90px;"><img src="'+app[i].art+'" alt="'+app[i].name+'" draggable="false"></td><td style="padding-left:5px;"><h4><b>'+app[i].name+'</b></h4><h5 style="color:#7B7A7F;">'+app[i].type+'</h5></td><td style="width:60px;"><div id="#modalDismiss1" class="close" data-dismiss="modal" aria-label="Close"><svg width="25" height="25"><circle cx="12.5" cy="12.5" r="12.5" fill="#010101"></circle><path d="M 8.04 8.04 L16.07 16.07 M 8.04 16.07 L16.07 8.04 Z" style="stroke:#FFFFFF;  fill:none; stroke-width:3;" /></svg></div><div class="install"><a class="code" href="'+app[i].url+'"target="_blank">Get</a></div></td></tr></table></div></div></div><div class="modal-body"><img src="'+app[i].update.img+'" class="inner"><hr><h5><span class="mod-first-letter"><h3><b>What&rsquo;s New</b></h3></span><h5>Version '+app[i].update.version+'<br/>'+app[i].update.date+'</h5><h5 class="mod-first-letter">'+app[i].update.versionTxt+'</h5><hr><h5><span class="mod-first-letter"><h3><b>Details</b></h3></span><div style="width:100%"><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">Seller</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].details.seller+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">Size</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].details.size+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">Category</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].type+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">Language</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].details.language+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">Sort by age</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].details.sort+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">In-app purchases</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].details.inapp+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px;">Copyright</div><div align="right" style="padding:5px; position:absolute; right:10px;">'+app[i].details.copy+'</div><hr><div class="mod-first-letter" align="left" style="padding:5px; position:absolute; left:10px; color:rgb(0,122,252);"><a href="'+app[i].details.site+'" class="site" style="font-size:20px;border:1px solid #1276af">اضغط هنا للدخول</a></div><hr></div></div></div></div></div>';
+		$(".store").append('<div class="col-lg-4 col-sm-6" align="center"><div class="thumbnail" data-toggle="modal" data-target="#'+app[i].name.toLowerCase().split(" ").join("").replace(/[^A-Za-z0-9 ]/g,"")+'" align="left"><table class="app"><tr><td style="width:90px;"><img src="'+app[i].art+'" alt="'+app[i].name+'" draggable="false"></td><td style="padding-left:5px;"><h4><b>'+app[i].name+'</b></h4><h5 style="color:#7B7A7F;">'+app[i].type+'</h5></td><td style="width:60px;"><div class="install"><a class="code" href="'+app[i].url+'" target="_blank">Get</a></div></td></tr></table><hr id="hr"></div></div>'+cout);
+		cout='';
+	}
+});
+
+
+
+
+///////تسجيل الدخول :الايميل هو khalid@gmail.com وكلمة المرور هي 123456
+
+function login()
+{
+var a=document.getElementById("d1").value;
+var b=document.getElementById ("d2").value; 
+var correctEmail="khalid@gmail.com";
+var correctPassword="123456";
+ if(a==correctEmail && b==correctPassword)
+   {
+	 alert("لقد تم تسجيل الدخول بنجاح. ");
+	 document.write("<h1>شكرا لك على التسجيل الدخول والاشتراك .</h1>")
+///هنا اعطينا امر للجافسكريبت اذا كان اسم الايميل هو khalid@gmail.com و كلمة المرور تساوي 123456اكتب للمستخدم لقد تم تسجيل الدخول بنجاح
+
+   }
+ else {
+	   alert ("الايميل او كلمة المرور غير صحيحة حاول مرة اخرى");
+///اذا لم تكن كذلك اكتب للمستخدم  كلمة السر او الاميل غير صحيحة
+	  } 
+} 
+
+</script>
+<footer>
+<div id="main-wrapper">
+		<h4>تسجيل الدخول</h4>
+			<div class="wrapper">
+			
+			<form>
+			<label>Email</label>
+			<input type="email"  id="d1" placeholder="example@gmail.com" style="margin-left:30px"><br></br>
+			<label>Password</label>
+			<input type="password" id="d2" placeholder="password">
+			<br><br>
+			<button class="submit" type="Submit"  onclick="login()" style="margin-left:80px;padding:5px 20px;">Login</button>
+			
+			</form>
+<h4>email: khalid@gmail.com<br/>Password: 123456</h4>
+هذا مجرد مثال لتسجيل الدخول في القريب ان شاء الله سأنشيء قاعدة بيانات  
+لتسجيل الدخول  على firebase  
+			
+			
+			</div>
+
+
+</footer>
+
+	
+	</body>
+</html>
+
+
